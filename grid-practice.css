@@ -1,0 +1,31 @@
+.dashboard {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main widget1"
+        "sidebar main widget2"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: 80px 1fr 1fr 60px;
+    gap: 15px;
+    min-height: 600px;
+}
+
+.header { 
+    grid-area: header; 
+    background: rgb(255, 69, 69); }
+.sidebar { 
+    grid-area: sidebar; 
+    background: rgb(255, 162, 23); }
+.main-content { 
+    grid-area: main; 
+    background: rgb(78, 238, 46); }
+.widget-1 { 
+    grid-area: widget1; 
+    background: rgb(37, 215, 255); }
+.widget-2 { 
+    grid-area: widget2; 
+    background: rgb(229, 35, 255); }
+.footer { 
+    grid-area: footer; 
+    background: rgba(118, 62, 208, 0.597); }
